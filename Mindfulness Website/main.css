@@ -1,0 +1,574 @@
+/* ---------------------------------------------
+BASE STYLES
+
+COLOURS
+
+#F9FAFA
+#F4F2F1
+#9B908D
+#C8B8A7
+#7F5F4C
+#4D423C
+
+--------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+}
+
+h2,
+h3 {
+  font-size: 1.2em;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+h3 {
+  font-size: 0.9em;
+  letter-spacing: 5px;
+}
+
+p {
+  font-size: 0.8em;
+  line-height: 2.0;
+  text-align: justify;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 40px;
+}
+
+.italics {
+  text-transform: lowercase;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: .8em;
+}
+
+.space {
+  letter-spacing: 5px;
+}
+
+.quotecontainer,
+.benefits,
+.resources,
+.footer {
+  background: #F9FAFA;
+}
+
+
+/* ---------------------------------------------
+NAVIGATION
+--------------------------------------------- */
+
+.nav {
+  border-bottom: .5px solid #F4F2F1;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+
+.menu {
+  margin: 0 30px 0 0;
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: #9B908D;
+  margin: 0 10px;
+  line-height: 70px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8em;
+}
+
+.menu a:hover {
+  color: #C8B8A7;
+  transition: color 0.5s;
+}
+
+.highlight {
+  color: #C8B8a7;
+}
+
+.highlight:hover {
+  color: #7F5F4C;
+  transition: color 0.5s;
+}
+
+img {
+  height: 50px;
+}
+
+label {
+  margin: 15px 20px 0 0;
+  font-size: 30px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: #4D423C;
+}
+
+#toggle {
+  display: none;
+}
+
+
+/* ---------------------------------------------
+HERO
+--------------------------------------------- */
+
+.hero {
+  background-image: url(/resources/hero/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 280px;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.7em;
+  padding: 10px 8px;
+  10px 8px;
+  background: #F4F2F1;
+  opacity: 0.6;
+}
+
+
+/* ---------------------------------------------
+ABOUT
+--------------------------------------------- */
+
+.about p {
+  margin-bottom: 25px;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+p a {
+  text-decoration: none;
+  color: #9B908D;
+  margin-top: 10px;
+}
+
+
+/* ---------------------------------------------
+QUOTES
+--------------------------------------------- */
+
+.quotes {
+  margin-bottom: 25px;
+}
+
+.quotes:last-child {
+  margin-bottom: 0;
+}
+
+blockquote {
+  font-size: 0.75em;
+  line-height: 2.0;
+  font-style: italic;
+}
+
+cite {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 2.5;
+  font-size: 0.6em;
+  font-style: normal;
+}
+
+
+/* ---------------------------------------------
+ESSENTIALS
+--------------------------------------------- */
+
+.essentials h2 {
+  padding-bottom: 20px;
+}
+
+.essentials img,
+.benefits img {
+  height: 80px;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexcontainer>div {
+  flex: 1 1 50%;
+  padding: 10px;
+  height: 260px;
+}
+
+.flexcontainer div,
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 2.5;
+  font-size: 0.6em;
+}
+
+.flexcontainer div p,
+.grid div {
+  margin-top: 10px;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 1.08em;
+  line-height: 2;
+  text-align: left;
+}
+
+
+/* ---------------------------------------------
+BENEFITS
+--------------------------------------------- */
+
+.benefits-copy {
+  padding-bottom: 35px;
+}
+
+.smallcontainer>div {
+  height: 240px;
+}
+
+
+/* ---------------------------------------------
+PRACTICE
+--------------------------------------------- */
+
+.smallh3 {
+  font-size: 0.7em;
+  color: #9B908D;
+}
+
+.smallh3:nth-of-type(1) {
+  margin-bottom: 23px;
+}
+
+.darkh3 {
+  color: black;
+}
+
+.practice {
+  font-size: 0.7em;
+  list-style-position: inside;
+  margin-bottom: 40px;
+}
+
+.practice li,
+.instructions li {
+  margin-bottom: 10px;
+}
+
+.practice li span,
+.instructions li span {
+  font-size: 1.45em;
+  margin-right: 20px;
+  color: #C8B8A7;
+  opacity: 0.8;
+}
+
+.flexcolumn div {
+  height: 200px;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.flexcolumn div p:first-child {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.6em;
+}
+
+.getstarted p {
+  margin-bottom: 30px;
+}
+
+.flexcolumn div:last-child {
+  margin-bottom: 10px;
+}
+
+.flexcolumn div:nth-of-type(1) {
+  background: url(/resources/practice/practice_1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.flexcolumn div:nth-of-type(3) {
+  background: url(/resources/practice/practice-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.flexcolumn div:nth-of-type(5) {
+  background: url(/resources/practice/practice-3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.instructions ul li {
+  font-size: 0.7em;
+}
+
+.line-height {
+  line-height: 2;
+}
+
+
+/* ---------------------------------------------
+RESOURCES
+--------------------------------------------- */
+
+.resources {
+  background: #9B908D;
+}
+
+.resources h2,
+.resources p {
+  color: white;
+}
+
+.resources p {
+  margin-bottom: 30px;
+}
+
+.button {
+  display: block;
+  padding: 20px;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.7em;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #9B908D;
+  transition: background 1s;
+}
+
+span a {
+  font-style: italic;
+  color: white;
+  font-size: 1em;
+}
+
+
+/* ---------------------------------------------
+REFERENCES
+--------------------------------------------- */
+
+.references p {
+  font-size: 0.7em;
+  margin-bottom: 5px;
+}
+
+.references-3 p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------
+FOOTER
+--------------------------------------------- */
+
+.footercontainer {
+  padding: 40px;
+  height: 260px;
+}
+
+ul {
+  list-style: none;
+}
+
+.listcontainer>div {
+  height: 210px;
+}
+
+.listcontainer ul li a {
+  font-size: 0.8em;
+  color: #9B908D;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 7px;
+  letter-spacing: 3px;
+}
+
+.listcontainer ul li a:hover,
+p a:hover {
+  color: #C8B8A7;
+}
+
+.listheading {
+  font-size: 1.1em;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+
+/* ---------------------------------------------
+MEDIA QUERIES
+--------------------------------------------- */
+
+@media only screen and (max-width: 550px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #F4F2F1;
+    margin: 0;
+  }
+  #toggle:checked+.menu {
+    display: block;
+    background: white;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  /* -- HERO -- */
+  .hero {
+    height: 500px;
+    background-position: center;
+  }
+  /* -- RESOURCES -- */
+  .resources-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .resources-flex div:first-child {
+    flex-basis: 60%;
+  }
+  .resources-flex div:last-child {
+    flex-basis: 30%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  /* -- ESSENTIALS -- */
+  .essentials-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .essentials-flex>div {
+    flex-basis: 30%;
+    height: 210px;
+  }
+  /* -- BENENFITS -- */
+  .smallcontainer,
+  .practice-flex {
+    display: flex;
+  }
+  .smallcontainer>div {
+    flex-basis: 25%;
+    height: 230px;
+  }
+  /* -- PRACTICE -- */
+  .practice-flex div {
+    flex-basis: 50%;
+  }
+  .practice-flex div {
+    flex-basis: 35%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* -- GLOBAL -- */
+  .about-flex,
+  .quotes-flex,
+  .references-flex,
+  .flexcolumn {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* -- HERO -- */
+  .hero {
+    height: 700px;
+    background-position: center;
+  }
+  h1 {
+    font-size: 2.1em;
+    padding: 20px 30px;
+    20px 30px;
+  }
+  /* -- ABOUT -- */
+  .about p {
+    margin-bottom: 0;
+  }
+  .about-flex p {
+    flex-basis: 50%;
+  }
+  .about-flex p:last-child {
+    flex-basis: 48%;
+  }
+  /* -- QUOTES -- */
+  .quotes {
+    margin-bottom: 0;
+  }
+  .quotes-flex .quotes-1,
+  .quotes-flex .quotes-2,
+  .quotes-flex .quotes-3 {
+    flex-basis: 30%;
+  }
+  /* -- PRACTICE -- */
+  .flexcolumn {
+    flex-wrap: wrap;
+  }
+  .flexcolumn div {
+    flex-basis: 46%;
+    padding-top: 0;
+  }
+  /* -- RESOURCES -- */
+  .resources-flex div:first-child {
+    flex-basis: 65%;
+  }
+  /* -- REFERENCES -- */
+  .references-1,
+  .references-2,
+  .references-3,
+  {
+    flex-basis: 30%;
+  }
+}
