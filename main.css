@@ -132,7 +132,7 @@ HERO
 --------------------------------------------- */
 
 .hero {
-  background-image: url("https://jema28.github.io/resources/hero/hero.jpg);
+  background-image: url("https://jema28.github.io/resources/hero/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
