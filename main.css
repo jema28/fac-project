@@ -313,7 +313,7 @@ PRACTICE
 }
 
 .flexcolumn div:nth-of-type(1) {
-  background: url(/resources/practice/practice_1.jpg);
+  background: url(/resources/practice/practice-1.jpg);
   background-size: cover;
   background-position: center;
 }
