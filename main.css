@@ -309,7 +309,7 @@ PRACTICE
 }
 
 .flexcolumn div:last-child {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .flexcolumn div:nth-of-type(1) {
