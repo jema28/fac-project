@@ -4,8 +4,6 @@ One-page website on Mindfulness and its many benefits. Please note there are cur
 
 https://jema28.github.io/
 
-Created by Jemila Abulhawa.
-
 
 
 
